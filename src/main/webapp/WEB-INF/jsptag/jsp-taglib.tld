@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+	<tlibversion>1.0</tlibversion> <!-- taglib版本号 -->
+	<jspversion>1.1</jspversion> <!-- JSP版本号 -->
+	<shortname>jtl</shortname> <!-- 声明该taglib的简称 -->
+	<tag> <!-- 标记定义开始 -->
+		<name>hwt</name> <!-- 标记名即JSP内部调用名 -->
+		<tagclass>com.mkyong.common.controller.HelloTag</tagclass> <!-- 标记类名 -->
+		<bodycontent>empty</bodycontent> <!-- 无标记体 -->
+	</tag> <!-- 标记定义结束 -->
+</taglib>

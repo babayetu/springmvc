@@ -6,7 +6,7 @@
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
-			<value>/WEB-INF/pages/</value>
+			<value>/WEB-INF/jsp/</value>
 		</property>
 		<property name="suffix">
 			<value>.jsp</value>
@@ -15,5 +15,10 @@
 
 	<bean name="/welcome.htm" 
 		class="com.mkyong.common.controller.HelloWorldController" />
+	<bean name="/home" 
+		class="com.springmvc.controller.HomeController">
+		<property name="flightService" ref="flightService"></property>
+	</bean>
+	<bean name="flightService" class="com.springmvc.ch4.case2.DummyFlightService"></bean>
 
 </beans>
